@@ -69,7 +69,34 @@ main#about p cite {
 }
 /* home v2 */
 
-section#concept{
+section#concept, 
+section#songs,
+main#contact{
   width: 900px;
   margin: 30px auto;
+}
+
+section#songs img {
+  width: 100%;
+}
+
+.duas-colunas{
+  overflow: hidden;
+}
+
+.duas-colunas > div {
+  width: 50%;
+  float: left;
+}
+
+section#songs ol li {
+  padding:  10px 0;
+}
+
+section#songs ol li strong{
+  color: orange;
+}
+section#form-mapa iframe{
+  width: 100%;
+  height: 400px;
 }
