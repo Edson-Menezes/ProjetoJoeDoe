@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   margin: 0;
@@ -99,4 +103,30 @@ section#songs ol li strong{
 section#form-mapa iframe{
   width: 100%;
   height: 400px;
+}
+
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 5px;
+}
+
+for .form-group {
+  margin: 0 0 10px;
+}
+
+form textarea {
+  resize: none;
+  height: 100%;
+}
+
+form button{
+  border: none;
+  padding: 5px 20px;
+  background-color: orange;
+  color: white;
+}
+
+.mapa {
+  padding-left: 20px;
 }
