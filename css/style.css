@@ -12,7 +12,13 @@ body {
 
 header {
   text-align: center;
-  border: 2px solid #ccc;
+  /*border: 2px solid #ccc;*/
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  background-color: #fff;
+  top: 0px;
+  left: 0;
+  width: 100%
 }
 
 header h1 {
@@ -49,6 +55,12 @@ footer p {
   text-align: center;
 }
 
+main,
+main#contact,
+main#music{
+  margin-top: 150px;
+}
+
 /* about */
 
 main#about {
@@ -77,6 +89,7 @@ section#concept,
 section#songs,
 main#contact{
   width: 900px;
+  max-width: 100%;
   margin: 30px auto;
 }
 
@@ -129,4 +142,94 @@ form button{
 
 .mapa {
   padding-left: 20px;
+}
+
+main,
+main#contact,
+main#music{
+  margin-top: 150px;
+}
+
+@media (max-width: 900px) {
+  section#concept,
+  section#songs {
+    padding: 0 40px;
+  }
+
+  nav ul li{
+    font-size: 40px;
+  }
+
+  nav ul{
+    padding: 10;
+  }
+
+  h2{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  p{
+    font-size: 20px;
+  }
+}
+
+@media(max-width: 768px){
+  .duas-colunas>div{
+    width: 100%;
+  }
+
+  section#songs ol li{
+    font-size: 25px;
+  }
+
+  main#music{
+    padding: 0 40px;
+  }
+
+  main#music iframe{
+    width: 100%;
+  }
+
+  main#music ul li,
+  main#music p {
+    font-size: 24px;
+  }
+  main#contact{
+    padding: 0 40px;
+  }
+
+  main#contact form,
+  main#contact input,
+  main#contact form textarea{
+    font-size: 24px;
+  }
+
+  main#contact form .form-group{
+    margin-bottom: 20px;
+  }
+
+  main#contact button{
+    font-size: 30px;
+  }
+}
+
+@media(max-width: 425px){
+  nav ul li{
+    font-size: 20px;
+  }
+
+  nav ul{
+    padding: 0;
+  }
+
+  main#about{
+    padding: 0 40px;
+  }
+
+  p{
+    font-size: 15px;
+  }
+
+
 }
